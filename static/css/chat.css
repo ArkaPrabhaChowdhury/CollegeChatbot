@@ -1,9 +1,4 @@
-.chat-bar-collapsible {
-    position: fixed;
-    bottom: 0;
-    right: 50px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+
 
 .collapsible {
     background-color: rgb(82, 151, 255);
@@ -19,12 +14,7 @@
     border-bottom: none;
 }
 
-.content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
-}
+
 
 .full-chat-block {
     width: 350px;
