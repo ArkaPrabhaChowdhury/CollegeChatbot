@@ -34,9 +34,9 @@
                         <!-- User input box -->
                         <div class="chat-bar-input-block">
                             <div id="userInput">
-                                <input id="textInput" class="input-box" type="text" name="msg" list="list"
+                                <input oninput="hideList(this)" autocomplete="false" id="textInput" class="input-box" type="text" name="msg" list="list"
                                     placeholder="Tap 'Enter' to send a message">
-                                    <datalist id="list">
+                                    <datalist id="">
                                         <option>kompally</option>
                                         <option>ferozguda</option>
                                         <option>dbms</option>
@@ -134,5 +134,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="static/scripts/responses.js"></script>
     <script src="static/scripts/chat.js"></script>
+    <script>
+        function hideList(input) {
+	var datalist = document.querySelector("datalist");
+	if (input.value) {
+		datalist.id = "list";    		
+	} else {
+		datalist.id = "";
+	}
+}
+    </script>
 
 </html>
