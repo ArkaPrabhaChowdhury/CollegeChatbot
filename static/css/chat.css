@@ -5,7 +5,7 @@
     color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 18px;
-    width: 350px;
+    width: 100%;
     text-align: left;
     outline: none;
     font-size: 18px;
@@ -17,7 +17,7 @@
 
 
 .full-chat-block {
-    width: 350px;
+    width: 100%;
     background: white;
     text-align: center;
     overflow: auto;
