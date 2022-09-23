@@ -34,7 +34,7 @@
                         <!-- User input box -->
                         <div class="chat-bar-input-block">
                             <div id="userInput">
-                                <input oninput="hideList(this)" autocomplete="false" id="textInput" class="input-box" type="text" name="msg" list="list"
+                                <input oninput="hideList(this)" onfocus="hideList1(this)" autocomplete="false" id="textInput" class="input-box" type="text" name="msg" list="list"
                                     placeholder="Tap 'Enter' to send a message">
                                     <datalist id="">
                                         <option>kompally</option>
@@ -142,6 +142,10 @@
 	} else {
 		datalist.id = "";
 	}
+}
+	    function hideList1(input) {
+	var datalist = document.querySelector("datalist");
+	  datalist.id = "";
 }
     </script>
 
