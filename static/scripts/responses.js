@@ -68,7 +68,7 @@ function getBotResponse(input) {
     "bachupally-x-roads",
     "scholarships",
     "nirf",
-    "apj abdul kalam block?",
+    "apj" ,"abdul" , "kalam", "block",
     "big","size"];
     //standardization
     input = input.replace(/[&\/\\#^+()$~%.'":*?<>{}!@]/g, '')
